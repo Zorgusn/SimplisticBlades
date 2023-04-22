@@ -1,15 +1,13 @@
 /* Set the style for the toolbar */
 .toolbar {
     position: fixed;
-    top: 5vw;
+    top: 3vw;
     left: 1vw;
     min-height: 70px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    background-color: #f2f2f2;
-    border: 1px solid black;
-    border-radius: 5px;
+    justify-content: space-between;
+    background-color: white;
 }
 
 /* Style the links inside the toolbar */
@@ -20,10 +18,12 @@
     text-decoration: none;
     font-size: 24px;
     padding: 10px;
+    margin-bottom: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 /* Change the color of links on hover */
@@ -34,7 +34,7 @@
 
 /* Style the last child of the toolbar */
 .toolbar a:last-child {
-    border-bottom: none;
+    margin-bottom: 0;
 }
 
 /* Style the divs inside the links */
@@ -47,7 +47,7 @@
 
 /* Style the icons */
 .toolbar a .icon i {
-    font-size: 36px;
+    font-size: 24px;
 }
 
 /* Set the style for the link descriptions */
@@ -59,8 +59,9 @@
     color: white;
     font-size: 12px;
     text-align: left;
-    padding: 2px 5px;
-    border-radius: 4px;
+    padding: 1px 5px;
+    border: 1px solid white;
+    border-radius: 6px;
 }
 
 /* Show the link descriptions on hover */
