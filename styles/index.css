@@ -1,0 +1,69 @@
+/* Set the style for the toolbar */
+.toolbar {
+    position: fixed;
+    top: 5vw;
+    left: 1vw;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* Style the links inside the toolbar */
+.toolbar a {
+    position: relative;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+/* Change the color of links on hover */
+.toolbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the last child of the toolbar */
+.toolbar a:last-child {
+    border-bottom: none;
+}
+
+/* Style the divs inside the links */
+.toolbar a .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Style the icons */
+.toolbar a .icon i {
+    font-size: 36px;
+}
+
+/* Set the style for the link descriptions */
+.toolbar a .link-description {
+    display: none;
+    position: absolute;
+    top: -20px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+/* Show the link descriptions on hover */
+.toolbar a:hover .link-description {
+    display: block;
+}
